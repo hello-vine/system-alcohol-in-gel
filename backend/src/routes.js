@@ -2,18 +2,13 @@ const express = require('express');
 
 const routes = express.Router();
 
-routes.post('/users', (request, response) => {
+routes.post('/adms', (request, response) => {
 
-    const body = request.body;
+    const { name, email, password } = request.body;
 
-    console.log(body);
+    console.log(data);
 
-    return response.json({
-
-        evento: 'Meu projeto',
-        Student: 'hello-vine'
-
-    });
+    return response.json();
 
 });
 
