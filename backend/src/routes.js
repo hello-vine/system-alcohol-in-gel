@@ -1,15 +1,22 @@
 const express = require('express');
 
+const admsController = require('./controllers/adms-controller');
+
+const usersController = require('./controllers/users-controller');
+
 const routes = express.Router();
 
-routes.post('/adms', (request, response) => {
+// List all adms
+routes.get('/adms', admsController.index);
 
-    const { name, email, password } = request.body;
+// Route adms, async ad with id generator
+routes.post('/adms', admsController.create);
 
-    console.log(data);
+// List all users
+routes.get('/users', usersController.index);
 
-    return response.json();
+// Route users, async ad with id generator
+routes.post('/users', usersController.create);
 
-});
-
+// Exports
 module.exports = routes;
