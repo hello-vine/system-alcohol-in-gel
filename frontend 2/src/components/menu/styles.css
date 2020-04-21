@@ -1,0 +1,33 @@
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.link-nav {
+    padding: 16px 32px;
+    text-decoration: none;
+    color: #1F67A6;
+    transition: .2s;
+}
+
+.link-nav:hover {
+    padding: 16px 32px;
+    text-decoration: none;
+    color: #0c4374;
+    transition: .2s;
+}
+
+.btn-nav {
+    padding: 8px 24px;
+    background-color: #3F9BBF;
+    text-decoration: none;
+    color: #F6F2F1;
+    font-weight: 500;
+    border-radius: 32px;
+    transition: .2s;
+}
+
+.btn-nav:hover {
+    background-color: #10739b;
+    transition: .2s;
+}
