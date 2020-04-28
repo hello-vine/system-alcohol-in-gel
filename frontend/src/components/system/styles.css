@@ -1,0 +1,114 @@
+.system-menu {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: -200px;
+    background-color: #DAEBF2;
+    box-shadow: 4px 0 32px -8px rgba(0, 0, 0, .2), 4px 0 32px -8px rgba(0, 0, 0, .2);
+    display: flex;
+    padding: 16px;
+    padding-right: 0px;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    transition: .4s;
+}
+
+.system-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.system-menu ul li {
+    margin: 8px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: .2s;
+}
+
+.logo-system {
+    height: 40px;
+    margin: 78px 0 78px 183px;
+    transition: .4s;
+}
+
+.link-nav-system {
+    display: flex;
+    color: #3F9BBF;
+    text-decoration: none;
+    margin-left: 16px;
+    opacity: 0;
+    transition: .1s;
+}
+
+.system-menu ul li:last-child {
+    background-color: #cae3ec;
+    padding: 8px 16px;
+    border-radius: 4px;
+    bottom: 48px;
+    display: flex;
+    margin-top: auto;
+}
+
+.system-menu ul li.active-system {
+    background-color: #cae3ec;
+    padding: 8px 16px;
+    border-radius: 4px;
+    bottom: 48px;
+    display: flex;
+}
+
+.system-menu ul li:hover {
+    box-shadow: 0 16px 32px -8px rgba(0, 0, 0, .2), 0 16px 32px -8px rgba(0, 0, 0, .1);
+    transform: scale(1.1);
+    background-color: #DAEBF2;
+    display: flex;
+    transition: .4s;
+}
+
+.link-system {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.icon-system {
+    position: absolute;
+    transform: translateX(183px);
+    transition: .4s;
+}
+
+/* Animate */
+
+.system-menu:hover {
+    left: 0px;
+    padding-right: 16px;
+    box-shadow: 24px 0 48px -16px rgba(0, 0, 0, .2), 24px 0 48px -16px rgba(0, 0, 0, .2);
+}
+
+.system-menu:hover > .logo-system {
+    height: 100px;
+    margin: 48px 0;
+}
+
+.system-menu:hover > ul > li > .link-system > .icon-system {
+    position: relative;
+    transform: unset;
+}
+
+.system-menu:hover > ul > li > .link-system > .icon-system {
+    position: relative;
+    transform: unset;
+}
+
+.system-menu:hover > ul > li > .link-system > .link-nav-system {
+    opacity: 1;
+    transition: 1.7s;
+}

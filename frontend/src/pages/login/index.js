@@ -24,7 +24,7 @@ export default function Login() {
 
                         <Link to="./">
 
-                            <img src={logo} className="logo-register"/>
+                            <img src={logo} alt="MedicalKit" className="logo-register"/>
 
                         </Link>
 
@@ -52,7 +52,7 @@ export default function Login() {
 
                                 <p> Esqueceu sua senha ? </p>
 
-                                <button className="button" type="submit"> Entrar </button>
+                                <Link to="bespeak" className="button" type="submit"> Entrar </Link>
 
                             </div>
 

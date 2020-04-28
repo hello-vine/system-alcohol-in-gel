@@ -25,7 +25,7 @@
 }
 
 .content-home h1 {
-    color: #F6F2F1;
+    color: #F1F4F6;
     font-size: 48px;
     font-weight: 600;
     text-align: center;
@@ -36,7 +36,7 @@
     border-radius: 32px;
     border: none;
     background-color: #1F67A6;
-    color: #F6F2F1;
+    color: #F1F4F6;
     text-transform: uppercase;
     margin-top: 48px;
     transition: .3s;
@@ -63,7 +63,7 @@
 
 .about {
     width: 100%;
-    padding: 48px 0;
+    padding: 96px 0;
     display: flex;
     justify-content: center;
 }
@@ -79,29 +79,28 @@
     padding-right: 48px;
 }
 
-.text-about h2 {
-    color: #1F67A6;
-}
-
 .text-about h1 {
     color: #3F9BBF;
     font-size: 48px;
     display: flex;
-    margin-bottom: 48px; 
-}
-
-.text-about h1::before {
-    content:"";
-    position: absolute;
-    transform: translateY(70px);
-    width: 40px;
-    height: 2px;
-    background: #1F67A6;
+    margin-bottom: 8px; 
 }
 
 .text-about h1 div {
     color: #1F67A6;
 }
+
+.text-about h2 {
+    color: #3F9BBF;
+    font-size: 18px;
+    margin-bottom: 48px; 
+    display: flex;
+}
+
+.text-about h2 div {
+    color: #1F67A6;
+}
+
 .text-about p {
     color: #484F52;
     line-height: 1.5rem;
@@ -111,7 +110,7 @@
 .image-about {
     width: 50%;
     min-height: 100%;
-    background: url('../../assets/background.jpg');
+    background: url('../../assets/about.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -120,17 +119,17 @@
 
 /* // About */
 
-/* Products */
+/* informations */
 
-.products {
+.informations {
     width: 100%;
     padding: 96px 0;
     display: flex;
     justify-content: center;
-    background-color: #BDE3F2;
+    background-color: #DAEBF2;
 }
 
-.content-products {
+.content-informations {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -138,11 +137,129 @@
     flex-wrap: wrap;
 }
 
+.text-informations {
+    width: 50%;
+    padding: 48px 0;
+    padding-left: 96px;
+}
+
+.text-informations h1 {
+    color: #3F9BBF;
+    font-size: 48px;
+    display: flex;
+    margin-bottom: 8px; 
+}
+
+.text-informations h2 {
+    color: #3F9BBF;
+    font-size: 18px;
+    margin-bottom: 96px; 
+    display: flex;
+}
+
+.text-informations h2 div {
+    color: #1F67A6;
+}
+
+.text-informations h1 div {
+    color: #1F67A6;
+}
+
+.text-informations ul {
+    list-style: none;
+}
+
+.text-informations ul li {
+    color: #484F52;
+    line-height: 1.5rem;
+    font-size: 16px;
+    margin-bottom: 16px; 
+    margin-left: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.image-informations {
+    width: 50%;
+    min-height: 100%;
+    background: url('../../assets/informations.png'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: right;
+    border-radius: 1px;
+}
+
+.text-informations button {
+    padding: 16px 64px;
+    border-radius: 32px;
+    border: none;
+    background-color: #1F67A6;
+    color: #F1F4F6;
+    text-transform: uppercase;
+    margin-top: 48px;
+    margin-left: 48px;
+    transition: .3s;
+}
+
+.text-informations button:hover {
+    background-color: #3F9BBF;
+}
+
+/* // informations */
+
+/* Products */
+
+.products {
+    width: 100%;
+    padding: 96px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #F1F4F6;
+}
+
+.container-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-products h1 {
+    color: #3F9BBF;
+    font-size: 48px;
+    display: flex; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-products h2 {
+    color: #3F9BBF;
+    font-size: 18px;
+    margin-bottom: 96px; 
+    display: flex;
+}
+
+.container-products h2 div {
+    color: #1F67A6;
+}
+
+.content-products {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 48px 0;
+    flex-wrap: wrap;
+}
+
 .product {
     -ms-flex: 0 0 30%;
     flex: 0 0 30%;
     max-width: 30%;
-    background-color: #F6F2F1;
+    background-color: #F1F4F6;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -150,6 +267,12 @@
     flex-direction: column;
     text-align: center;
     padding: 16px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.product:hover {
+    box-shadow: 0px 4px 24px -16px rgba(0, 0, 0, .3), 0px 4px 24px -8px rgba(0, 0, 0, .1);
 }
 
 .icon-product {
@@ -173,3 +296,227 @@
 }
 
 /* // Products */
+
+/* benefits */
+
+.benefits {
+    width: 100%;
+    padding: 96px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #DAEBF2;
+}
+
+.content-benefits {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-benefits {
+    color: #3F9BBF;
+    font-size: 48px;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-items-benefits {
+    width: 100%;
+    margin-bottom: 64px;
+    display: flex;
+}
+
+.item-benefits {
+    display: flex;
+    width: 50%;
+    padding: 32px 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F9BBF;
+    border-radius: 8px;
+    transition: .1s;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    box-shadow: 0 4px 32px -16px rgba(0, 0, 0, .4), 0 4px 16px -8px rgba(0, 0, 0, .4);
+}
+
+.item-benefits:first-child {
+    margin-right: 64px;
+}
+
+.item-benefits:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    background-color: #DAEBF2;
+    transition: .4s;
+    box-shadow: 0 32px 64px -16px rgba(0, 0, 0, .2), 0 32px 64px -8px rgba(0, 0, 0, .2);
+}
+
+.icon-benefits {
+    width: 70px;
+    height: 70px;
+    margin-right: 64px;
+}
+
+.text-benefits {
+    width: 50%;
+}
+
+.text-benefits h1 {
+    color: #F1F4F6;
+    margin-bottom: 16px;
+}
+
+.content-benefits h2 {
+    color: #3F9BBF;
+    font-size: 18px;
+    margin-bottom: 96px; 
+    display: flex;
+}
+
+.content-benefits h2 div {
+    color: #1F67A6;
+}
+
+.text-benefits p {
+    color: #F1F4F6;
+}
+
+.item-benefits:hover h1,
+.item-benefits:hover p,
+.item-benefits:hover .icon-benefits {
+    color: #3F9BBF !important;
+    transition: .4s;
+}
+
+/* // benefits */
+
+/* Contact */
+
+.contact {
+    width: 100%;
+    padding: 96px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #F1F4F6;
+}
+
+.content-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-contact h1 {
+    color: #3F9BBF;
+    font-size: 48px;
+    display: flex;
+    margin-bottom: 8px; 
+}
+
+.content-contact h2 {
+    color: #3F9BBF;
+    font-size: 18px;
+    display: flex;
+    margin-bottom: 48px; 
+}
+
+.content-contact h2 div {
+    color: #1F67A6;
+}
+
+.container-form-contact {
+    width: 100%;
+    border-radius: 16px;
+    padding: 64px 48px;
+    background-color: #DAEBF2;
+    display: flex;
+    justify-content: space-between;
+    /* box-shadow: 0 16px 64px -16px rgba(0, 0, 0, .1), 0 16px 64px -8px rgba(0, 0, 0, .1); */
+}
+
+.container-form-contact h3 {
+    font-size: 24px;
+    color: #3F9BBF;
+    margin-bottom: 48px;
+}
+
+.information-contact {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.information-contact ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    color: #3F9BBF;
+}
+
+.form-contact {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.container-input-contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.group-input-contact {
+    width: 100%;
+    display: flex;
+}
+
+.container-input-contact input,
+.form-contact textarea {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 8px 16px 64px;
+}
+
+.form-contact textarea {
+    height: unset;
+    min-height: 150px;
+    resize: vertical;
+}
+
+.icon-input-contact {
+    position: absolute;
+    transform: translateX(20px);
+}
+
+.form-contact button {
+    padding: 16px 64px;
+    border-radius: 32px;
+    border: none;
+    background-color: #1F67A6;
+    color: #F1F4F6;
+    text-transform: uppercase;
+    margin-top: 48px;
+    transition: .3s;
+}
+
+.text-area-icon {
+    transform: translate(20px, -49px);
+}
+
+.form-contact button:hover {
+    background-color: #3F9BBF;
+}
+
+/* // Contact */

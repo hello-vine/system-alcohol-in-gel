@@ -18,16 +18,17 @@
 }
 
 .btn-nav {
-    padding: 8px 24px;
-    background-color: #3F9BBF;
     text-decoration: none;
-    color: #F6F2F1;
-    font-weight: 500;
+    padding: 16px 64px;
     border-radius: 32px;
+    border: none;
+    background-color: #1F67A6;
+    color: #F1F4F6;
+    text-transform: uppercase;
     transition: .2s;
 }
 
 .btn-nav:hover {
-    background-color: #10739b;
+    background-color: #3F9BBF;
     transition: .2s;
 }

@@ -31,6 +31,14 @@ export default function Menu() {
                 <li>
 
                     <Link className="link-nav" to="/login">
+                        Produtos
+                    </Link>
+
+                </li>
+
+                <li>
+
+                    <Link className="link-nav" to="/login">
                         Contato
                     </Link>
 

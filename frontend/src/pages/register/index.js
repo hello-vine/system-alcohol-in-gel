@@ -48,7 +48,7 @@ export default function Login() {
 
                         <Link to="./">
 
-                            <img src={logo} className="logo-register"/>
+                            <img src={logo} alt="MedicalKit" className="logo-register"/>
                         
                         </Link>
 

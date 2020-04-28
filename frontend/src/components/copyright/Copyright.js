@@ -12,7 +12,7 @@ export default function Footer() {
 
                 <div className="content-copyright">
 
-                    <p> Copyright © 2020 Easykit protection | Desenvolvido por Hello-dev </p>
+                    <p> Copyright © 2020 Medicalkit protection | Desenvolvido por Hello-dev </p>
 
                 </div>
 
